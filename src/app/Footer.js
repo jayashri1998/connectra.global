@@ -1,5 +1,9 @@
 "use client";
 import { FaArrowRight } from "react-icons/fa";
+import { AiOutlineMail } from "react-icons/ai";
+import { FiPhoneCall } from "react-icons/fi";
+import { SlLocationPin } from "react-icons/sl";
+
 
 export default function Footer() {
   return (
@@ -62,11 +66,12 @@ export default function Footer() {
         <div className="mt-16">
         <h4 className="text-xl font-semibold mb-4">Contact</h4>
         <ul className="text-gray-300 space-y-3">
-            <li>
-            Flat 20, Tech Park Road, Pune, India
+            <li className="flex gap-4">
+             <SlLocationPin className="mt-2"/>
+            83 Trilok nagar Dattawadi nagpur 440023
             </li>
-            <li>+91 98765 43210</li>
-            <li>info@connectra.in</li>
+            <li className="flex gap-4"> <FiPhoneCall/>+91 8806339796</li>
+            <li className="flex gap-4">  <AiOutlineMail className="mt-2"/>gaurav@connectra.global</li>
         </ul>
         </div>
     </div>

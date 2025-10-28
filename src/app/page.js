@@ -9,6 +9,7 @@ import Footer from "@/app/Footer";
 import service from "../assests/sevice.jpg";
 import { motion } from "framer-motion";
 import { FaServer, FaLaptopCode, FaNetworkWired } from "react-icons/fa"
+import Link from "next/link";
 
 export default function Home() {
    
@@ -60,17 +61,17 @@ export default function Home() {
         <div className="relative z-10 flex h-full items-center justify-center md:justify-start px-6 md:px-20">
           {/* Content Box */}
           <div className="text-white text-center md:text-left max-w-2xl">
-            <h1 className="text-3xl md:text-5xl font-bold mb-4 transition-all duration-800 ease-in-out">
+            <h1 className="text-3xl md:text-5xl font-bold font-mono mb-4 transition-all duration-800 ease-in-out">
               {title}
             </h1>
-            <p className="text-lg md:text-xl mb-6 transition-all duration-700 ease-in-out">
+            <p className="text-lg md:text-xl font-serif mb-6 transition-all duration-700 ease-in-out">
               {description}
             </p>
 
             <div className="flex flex-col md:flex-row items-center md:items-start gap-4">
-              <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-xl font-semibold transition">
+              <Link href='/contact' className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-xl font-semibold transition">
                 Explore More
-              </button>
+              </Link>
               <button className="bg-transparent border border-white px-6 py-3 rounded-xl hover:bg-white hover:text-black transition">
                 Contact Us
               </button>
@@ -143,7 +144,6 @@ export default function Home() {
           </div>
       </motion.div>
     </section>
-<Footer/>
     </main>
   );
 }
