@@ -22,7 +22,6 @@ const Navbar = () => {
       }`}
     >
       <nav className="container mx-auto flex justify-between items-center py-4 px-6">
-        {/* Logo Section */}
         <div className="flex items-center gap-2">
           <img
             src="/logofinal.png"
