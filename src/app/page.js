@@ -94,7 +94,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Right Content */}
       <motion.div
         className="md:w-1/2 text-center md:text-left md:ml-12"
         initial={{ opacity: 0, y: -50 }}
@@ -232,9 +231,9 @@ export default function Home() {
     {/* Left side - Image */}
     <div className="md:w-1/2 flex justify-center">
       <Image
-        src="/director.jpg"
+        src="/director.jpeg"
         alt="Director"
-        width={350}
+        width={400}
         height={400}
         className="rounded-2xl shadow-2xl object-cover border-4 border-white/20 hover:scale-105 transition-transform duration-500"
       />
@@ -242,9 +241,12 @@ export default function Home() {
 
     {/* Right side - Message */}
     <div className="md:w-1/2 space-y-5">
-      <h2 className="text-4xl font-bold mb-4 text-[#f87171] uppercase tracking-wide relative">
+      <h2 className=" text-center font-bold mb-4 text-red-600  tracking-wide relative">
         Director’s Message
-        <span className="block w-24 h-1 bg-[#f87171]/60 mt-2"></span>
+      <div className="flex justify-center">
+      <span className="block w-24 h-1 bg-[#f87171]/60 mt-2"></span>
+    </div>
+
       </h2>
 
       <p className="text-lg leading-relaxed text-gray-200">
