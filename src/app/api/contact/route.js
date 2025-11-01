@@ -22,7 +22,7 @@ export async function POST(req) {
     // 2️⃣ Email to your company
     await transporter.sendMail({
       from: `"Connectra Technologies" <${process.env.SMTP_USER}>`,
-      to: "jayashrimatale28@gmail.com", // your company email
+      to: "gaurav@connectra.global", // your company email
       subject: "New Contact Form Submission",
       html: `
         <h2>New Contact Message</h2>
