@@ -10,6 +10,7 @@ import service from "../assests/sevice.jpg";
 import { motion } from "framer-motion";
 import { FaServer, FaLaptopCode, FaNetworkWired } from "react-icons/fa"
 import Link from "next/link";
+import Card from "./Section/card";
 
 export default function Home() {
    
@@ -274,7 +275,7 @@ export default function Home() {
   </div>
 </section>
 
-
+<Card/>
 
     </main>
   );
