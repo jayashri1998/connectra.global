@@ -57,7 +57,6 @@ const fullDescriptions = {
                 height={300}
                 className="w-full h-[250px] object-cover transition-transform duration-500 transform group-hover:scale-110"
               />
-
               {/* Overlay - always visible but darker on hover */}
               <div className="absolute inset-0 bg-opacity-30 bg-black/50 group-hover:bg-opacity-70 transition-all duration-500"></div>
 
@@ -74,7 +73,7 @@ const fullDescriptions = {
                       <a
                         href={card.link}
                         className="text-blue-400 hover:underline ml-1"
-                      >
+                    >
                         {isReadMore ? "Read Less" : "Read More"}
                       </a>
                     )}
