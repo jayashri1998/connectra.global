@@ -22,7 +22,7 @@ const Navbar = () => {
       }`}
     >
       <nav className="container mx-auto flex justify-between items-center py-4 px-6">
-        <div className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-2">
           <img
             src="/logofinal.png"
             alt="Company Logo"
@@ -32,7 +32,7 @@ const Navbar = () => {
             <h1 className="text-white text-xl font-mono font-semibold pt-2">Connectra</h1>
             <p className="text-base font-mono text-red-600">Technologies</p>
           </div>
-        </div>
+        </Link>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6 font-medium text-white">
@@ -41,14 +41,14 @@ const Navbar = () => {
               Home
             </Link>
           </li>
-          <li>
-            <Link href="/services" className="hover:text-red-600 transition">
-              Services
+            <li>
+            <Link href="/about" className="hover:text-red-600 transition">
+              About
             </Link>
           </li>
           <li>
-            <Link href="/products" className="hover:text-red-600 transition">
-              Products
+            <Link href="/services" className="hover:text-red-600 transition">
+              Services
             </Link>
           </li>
           <li>
