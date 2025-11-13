@@ -34,7 +34,15 @@ export default function Home() {
         "Connect smarter with high-performance switches, routers, and network security systems — built for seamless connectivity and protection.",
     },
   ];
-  
+   const team = [
+    { src: "/team1.jpg", alt: "Team Member 1" },
+    { src: "/team2.jpg", alt: "Team Member 2" },
+    { src: "/team3.jpg", alt: "Team Member 3" },
+    { src: "/team4.jpg", alt: "Team Member 4" },
+    { src: "/team5.jpg", alt: "Team Member 5" },
+    { src: "/team6.jpg", alt: "Team Member 6" },
+    { src: "/team7.jpg", alt: "Team Member 7" },
+  ];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -217,8 +225,89 @@ export default function Home() {
   {/* Background Pattern Effect */}
   <div className="absolute inset-0 opacity-10 bg-[url('/network-bg.png')] bg-cover bg-center"></div>
 </section>
+<section className=" py-20 px-6 md:px-16 text-black relative overflow-hidden">
+ <div className="md:flex  gap-4">
+   <Image
+            src="/projector2.png"
+            alt="Connectra Technologies Banner"
+     
+            width={300}
+            height={200}
+            className="object-contain brightness-75 transition-opacity duration-1000"
+            key={currentIndex}
+          />
+    <div className="max-w-6xl mx-auto text-center mb-16 relative z-10">
+    <h3 className="text-red-500 uppercase font-semibold tracking-widest mb-3">
+     OUR BUSINESS EXPERTISE
+    </h3>
+    <h2 className="text-4xl md:text-5xl font-extrabold mb-1">
+    Sales & Services
+    </h2>
+    <p className="text-gray-700 text-lg mt-16">
+      We provide all types of projectors — from LED to laser — along with professional installation, setup, and maintenance. Perfect solutions for offices, classrooms, auditoriums, and home theaters with reliable after-sales support.</p>
+  </div>
+
+  <div>
+  <Image
+            src="/projector.png"
+            alt="Connectra Technologies Banner"
+     
+            width={300}
+            height={200}
+            className="object-contain brightness-75 transition-opacity duration-1000"
+            key={currentIndex}
+          />
+          </div>
+ </div>
+   <section className="px-6 md:px-4 py-16 bg-white">
+      <div className="flex flex-col lg:flex-row items-center gap-10">
+        {/* Left Side - Images */}
+        <div className="flex flex-col md:flex-row items-center gap-4">
+          <Image
+            src="/webdevelopment.jpg"
+            alt="Web Development Team"
+            width={400}
+            height={400}
+            className="rounded-bl-4xl rounded-tr-4xl shadow-2xl object-cover border-4 border-gray-200 md:mt-20"
+          />
+          <Image
+            src="/alldevepoment.png"
+            alt="Team Discussion"
+            width={400}
+            height={250}
+            className="rounded-bl-4xl rounded-tr-4xl shadow-2xl object-cover border-4 border-gray-200 md:mt-40"
+          />
+        </div>
+
+        {/* Right Side - Text */}
+        <div className="flex-1">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 mb-4">
+            Who We Are
+          </h2>
+          <p className="text-gray-700 text-lg leading-relaxed">
+            <strong>Connectra Technologies</strong> is a forward-thinking IT solutions company 
+            dedicated to crafting digital experiences that empower businesses to grow and 
+            succeed in today’s competitive landscape. Based in Pune, India, Connectra combines 
+            creativity, technology, and innovation to deliver high-impact solutions for our clients.
+          </p>
+
+          <p className="text-gray-700 text-lg leading-relaxed mt-4">
+            Our expertise spans <strong>Web Design, Digital Marketing, and UI/UX Design</strong> — 
+            ensuring that every brand we work with stands out through stunning visuals, optimized 
+            performance, and engaging user experiences. We believe in designing not just websites, 
+            but complete digital identities that connect brands with their audience effectively.
+          </p>
+
+          <p className="text-gray-700 text-lg leading-relaxed mt-4">
+            At <strong>Connectra Technologies</strong>, we’re driven by innovation and collaboration, 
+            helping our clients stay ahead through tailored digital strategies and modern technologies.
+          </p>
+        </div>
+      </div>
+    </section>
+</section>
+
 <section className="relative overflow-hidden py-20 px-6 md:px-16 text-white">
-  {/* Background Shape */}
   <div
     className="absolute inset-0 bg-gradient-to-r from-[#2b0a0a] via-[#1a1a1a] to-[#2b0a0a]"
     style={{
@@ -228,8 +317,7 @@ export default function Home() {
 
   {/* Content */}
   <div className="relative z-10 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
-    
-    {/* Left side - Image */}
+      
     <div className="md:w-1/2 flex justify-center">
       <Image
         src="/director.jpeg"
@@ -276,7 +364,51 @@ export default function Home() {
 </section>
 
 <Card/>
+    <section className="relative  py-20 overflow-hidden">
+      <div className="max-w-6xl mx-auto px-4 relative">
+        <h2 className="text-center text-4xl md:text-5xl font-bold text-black mb-32">
+          Meet Our Clients
+        </h2>
 
+        {/* Collage Container */}
+        <div className="relative flex justify-center items-center mb-16">
+          <div className="relative flex flex-wrap justify-center gap-6 md:gap-10 max-w-4xl">
+            {/* Center Image */}
+            <div className="relative z-20 w-40 h-40 md:w-56 md:h-56 rounded-xl overflow-hidden shadow-xl">
+              <Image src="/team1.jpg" alt="Team Member 1" fill className="object-cover" />
+            </div>
+
+            {/* Top Left */}
+            <div className="absolute top-[-60px] left-[200px] w-32 h-32 md:w-44 md:h-44 rounded-xl overflow-hidden shadow-xl z-10">
+              <Image src="/team2.jpg" alt="Team Member 2" fill className="object-cover" />
+            </div>
+
+            {/* Top Right */}
+            <div className="absolute top-[-60px] right-[200px] w-32 h-32 md:w-44 md:h-44 rounded-xl overflow-hidden shadow-xl z-10">
+              <Image src="/team3.jpg" alt="Team Member 3" fill className="object-cover" />
+            </div>
+
+            {/* Bottom Left */}
+            <div className="absolute bottom-[-80px] left-[200px] w-32 h-32 md:w-44 md:h-44 rounded-xl overflow-hidden shadow-xl z-10">
+              <Image src="/team4.jpg" alt="Team Member 4" fill className="object-cover" />
+            </div>
+
+            {/* Bottom Right */}
+            <div className="absolute bottom-[-80px] right-[200px] w-32 h-32 md:w-44 md:h-44 rounded-xl overflow-hidden shadow-xl z-10">
+              <Image src="/team5.jpg" alt="Team Member 5" fill className="object-cover" />
+            </div>
+
+            {/* Side small images */}
+            <div className="absolute left-0 top-1/3 w-28 h-28 md:w-36 md:h-36 rounded-xl overflow-hidden shadow-lg">
+              <Image src="/team6.jpg" alt="Team Member 6" fill className="object-cover" />
+            </div>
+            <div className="absolute right-0 top-1/3 w-28 h-28 md:w-36 md:h-36 rounded-xl overflow-hidden shadow-lg">
+              <Image src="/team7.jpg" alt="Team Member 7" fill className="object-cover" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     </main>
   );
 }
