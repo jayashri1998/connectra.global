@@ -228,14 +228,13 @@ export default function Home() {
 <section className=" py-20 px-6 md:px-16 text-black relative overflow-hidden">
  <div className="md:flex  gap-4">
    <Image
-            src="/projector2.png"
-            alt="Connectra Technologies Banner"
-     
-            width={300}
-            height={200}
-            className="object-contain brightness-75 transition-opacity duration-1000"
-            key={currentIndex}
-          />
+    src="/projector2.png"
+    alt="Connectra Technologies Banner"
+    width={300}
+    height={200}
+    className="object-contain brightness-75 transition-opacity duration-1000"
+    key={currentIndex}
+  />
     <div className="max-w-6xl mx-auto text-center mb-16 relative z-10">
     <h3 className="text-red-500 uppercase font-semibold tracking-widest mb-3">
      OUR BUSINESS EXPERTISE
@@ -285,9 +284,9 @@ export default function Home() {
             Who We Are
           </h2>
           <p className="text-gray-700 text-lg leading-relaxed">
-            <strong>Connectra Technologies</strong> is a forward-thinking IT solutions company 
+            <strong className=" text-[#f87171] font-semibold">Connectra Technologies</strong> is a forward-thinking IT solutions company 
             dedicated to crafting digital experiences that empower businesses to grow and 
-            succeed in today’s competitive landscape. Based in Pune, India, Connectra combines 
+            succeed in today’s competitive landscape. Based in Nagpur, India, Connectra combines 
             creativity, technology, and innovation to deliver high-impact solutions for our clients.
           </p>
 
