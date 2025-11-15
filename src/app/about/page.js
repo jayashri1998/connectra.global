@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -13,32 +14,32 @@ export default function About() {
           />
         </div>
         <div className="absolute inset-0 bg-black/50"></div>
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+        <div className="absolute mt-32 md:mt-2 inset-0 flex flex-col items-center justify-center text-center px-4">
+          <h1 className="text-2xl md:text-5xl font-bold mb-4 text-white">
             Complete IT Sales & Service Solutions
           </h1>
-          <p className="text-gray-300 text-lg mb-6 max-w-2xl">
+          <p className="text-gray-300  text-base md:text-lg mb-2 md:mb-6 max-w-2xl">
             We provide end-to-end IT solutions including servers, networks,
             storage, CCTV, workstation setups & professional IT support.
           </p>
-          <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-md font-medium transition-all">
+          <Link href='/contact' className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-md font-medium transition-all">
             Get Quote
-          </button>
+          </Link>
         </div>
       </section>
 
       {/* STATS SECTION */}
-     <section className="absolute left-1/2 -translate-x-1/2 bg-[#101010] text-white py-8 rounded-bl-[50px] rounded-tr-[50px] -mt-12 flex items-center justify-center gap-12 shadow-lg px-10">
+     <section className="absolute left-1/2 -translate-x-1/2 bg-[#101010] text-white py-4 md:py-8 rounded-bl-[50px] rounded-tr-[50px] -mt-12 flex items-center justify-center gap-12 shadow-lg px-10">
   <div className="text-center">
-    <p className="text-3xl font-bold text-white">500+</p>
+    <p className= " text-xl md:text-3xl font-bold text-white">100+</p>
     <p>Happy Clients</p>
   </div>
   <div className="text-center">
-    <p className="text-3xl font-bold text-white">12+ Years</p>
+    <p className=" text-xl md:text-3xl font-bold text-white">10+ Years</p>
     <p>Industry Experience</p>
   </div>
   <div className="text-center">
-    <p className="text-3xl font-bold text-white">50+</p>
+    <p className=" text-xl md:text-3xl font-bold text-white">20+</p>
     <p>Corporate Projects</p>
   </div>
 </section>
@@ -56,7 +57,7 @@ export default function About() {
 
         <div>
           <h2 className="text-3xl font-bold mb-4">About Us</h2>
-          <p className="text-gray-300 mb-6 leading-relaxed">
+          <p className="text-gray-700 text-lg mb-6 leading-relaxed">
             We specialize in delivering robust IT infrastructure services that
             help businesses operate smoothly and securely. From hardware sales
             to end-to-end network setup, we ensure that your IT environment is
@@ -84,7 +85,7 @@ export default function About() {
           ].map((service, index) => (
             <div
               key={index}
-              className="border border-red-600 rounded-xl p-6 shadow-lg hover:shadow-red-600/30 transition-all bg-[#111]"
+              className="border border-red-600 rounded-xl p-6 shadow-lg hover:shadow-red-600/30 transition-all "
             >
               <h3 className="text-xl font-semibold mb-3 text-red-400">
                 {service}

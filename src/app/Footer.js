@@ -23,7 +23,7 @@ export default function Footer() {
     </button>
   </div>
 </div>
-      <div className="px-6 md:px-20  py-4  grid grid-cols-1 md:grid-cols-4 gap-10 relative   ">
+      <div className="px-6 md:px-20 mt-12  py-4  grid grid-cols-1 md:grid-cols-4 gap-10 relative   ">
         <div>
            <div className="flex items-center gap-2 mt-16">
       <img

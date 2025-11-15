@@ -8,6 +8,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
     const [open, setOpen] = useState(false);
+    const [mobileDropdown, setMobileDropdown] = useState(false);
   const services = [
     "Computer Systems",
     "Servers & Storage",
@@ -122,14 +123,42 @@ const Navbar = () => {
           <Link href="/" onClick={() => setIsOpen(false)} className="hover:text-red-600 text-lg">
             Home
           </Link>
-          <Link href="/services" onClick={() => setIsOpen(false)} className="hover:text-red-600 text-lg">
-            Services
+          <Link href="/about" onClick={() => setIsOpen(false)} className="hover:text-red-600 text-lg">
+            About 
           </Link>
-          <Link href="/products" onClick={() => setIsOpen(false)} className="hover:text-red-600 text-lg">
-            Products
-          </Link>
+           <div className="w-full ">
+<button
+  onClick={() => setMobileDropdown(!mobileDropdown)}
+  className="w-full flex justify-center items-center gap-2 text-lg hover:text-red-600"
+>
+  Services & Products
+  <SlArrowDown
+    className={`transition-transform duration-300 ${mobileDropdown ? "rotate-180" : ""}`}
+  />
+</button>
+
+      {mobileDropdown && (
+        <ul className="mt-2 ml-2 border-l border-gray-600 space-y-2">
+          {services.map((item, index) => (
+            <li key={index}>
+              <Link
+                href={`/services`}
+                className="block py-1 pl-4 text-base text-gray-300 hover:text-red-600"
+                onClick={() => {
+                  setMobileDropdown(false);
+                  setIsOpen(false);
+                }}
+              >
+                {item}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+      
           <Link href="/contact" onClick={() => setIsOpen(false)} className="hover:text-red-600 text-lg">
-            Contact
+            Contact Us
           </Link>
         </div>
       )}
