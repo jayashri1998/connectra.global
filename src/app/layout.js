@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "./Navbar";
 import { Toaster } from "react-hot-toast";
 import Footer from "./Footer";
+import WhatsAppFloat from "./Section/WhatsAppFloat";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -35,6 +36,7 @@ export default function RootLayout({ children }) {
         <main className="pt-20">
           {children}
            <Toaster position="top-center" reverseOrder={false} />
+             <WhatsAppFloat />
         </main>
         <Footer/>
       </body>

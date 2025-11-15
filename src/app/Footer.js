@@ -8,7 +8,9 @@ import { SlLocationPin } from "react-icons/sl";
 export default function Footer() {
   return (
     <footer className="bg-[#1E1E1E] text-white">
-    <div className=" hidden md:block absolute z-10 left-1/2 transform -translate-x-1/2 -mt-10 bg-red-600 flex items-center justify-between gap-6 px-6 md:px-12 py-6 rounded-2xl shadow-lg w-[90%] md:w-[70%]">
+   <div className="hidden md:flex absolute z-10 left-1/2 -translate-x-1/2 -mt-10 
+bg-red-600 flex-row items-center justify-between gap-6 
+px-6 md:px-12 py-6 rounded-2xl shadow-lg w-[90%] md:w-[70%]">
   <h2 className="text-xl md:text-2xl font-bold text-white whitespace-nowrap">
     Subscribe to Our Newsletter
   </h2>
@@ -67,7 +69,7 @@ export default function Footer() {
         <h4 className="text-xl font-semibold mb-4">Contact</h4>
         <ul className="text-gray-300 space-y-3">
             <li className="flex gap-4">
-             <SlLocationPin className="mt-2"/>
+            <SlLocationPin className="mt-2"/>
             83 Trilok nagar Dattawadi nagpur 440023
             </li>
             <li className="flex gap-4"> <FiPhoneCall/>+91 8806339796</li>
